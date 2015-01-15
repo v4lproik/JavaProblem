@@ -16,9 +16,9 @@ The idea by performing this exercise you will be able to demonstrate several asp
 ***
 In this made-up scenario we have a supermarket customer who buy and sell only the finest goods.  Unfortunately their goods are constantly degrading in quality as they approach their sell by date.  They have a java application in place that updates their inventory for price and quality as the items age.  We have been engaged to help them develop it further with a new enhancement.
 
-	Your task is to implement the new feature *without* breaking the existing business logic specified here. 
+Your task is to implement the new feature *without* breaking the existing business logic specified here. 
 	
-	We're aware the codebase is 'sub-optimal' (to say the least) so would like you to describe or demonstrate how you would improve the solution as well
+We're aware the codebase is 'sub-optimal' (to say the least) so would like you to describe or demonstrate how you would improve the solution as well
 	
 	
 ## Business Rules / Requirements
