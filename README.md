@@ -32,6 +32,8 @@ First an introduction to the system:
 	
 ## Instructions
 ***
+We're not imposing a maximum or minimum time limit on this challenge but previous experience suggests allowing for around an hour to complete.
+
 1. Clone this repository
 2. Create your own GitHub/BitBucket repository and commit the base project to it
 3. At regular intervals commit and push your changes so we can see logical progress & steps you took through the problem
