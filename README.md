@@ -24,10 +24,24 @@ We're aware the codebase is 'sub-optimal' (to say the least) so would like you t
 ## Business Rules / Requirements
 ***
 First an introduction to the system:
-*	All items have a SellIn value ‘int’ which denotes the number of days we have left to sell the item*	All items have a Quality value ‘int’ which denotes how valuable the item is*	At the end of each day our system lowers both ‘int’ values for every item.  This is triggered by an invocation of the ‘updateQuality()’ method.There are some strict business rules, which need to be maintained:*	Once the sell by date has passed, Quality degrades twice as fast (i.e. the int is decremented by 2 instead of 1)*	The Quality of an item is never negative*	The Quality of an item is never more than 50; except for “Sulfuras” which can be 80.Certain item categories have special behaviours, again which need to be maintained:*	"Aged Brie" actually increases in Quality the older it gets*	"Sulfuras" never has to be sold or decreases in Quality*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value approaches; Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concertThe supermarket has recently signed a supplier of Organic Bananas. 
-This requires an update to the system:
-•	The "Organic Bananas" item degrade in Quality twice as fast as normal itemsChanges can be made to the UpdateQuality method and add any new code as long as everything still works correctly.  
-However you cannot alter the Item class as it belongs to a mythical third-party who won’t let us make modifications to the class they provide.
+*	All items have a SellIn value ‘int’ which denotes the number of days we have left to sell the item
+*	All items have a Quality value ‘int’ which denotes how valuable the item is
+*	At the end of each day our system lowers both ‘int’ values for every item.  This is triggered by an invocation of the ‘updateQuality()’ method.
+There are some strict business rules, which need to be maintained:
+*	Once the sell by date has passed, Quality degrades twice as fast (i.e. the int is decremented by 2 instead of 1)
+*	The Quality of an item is never negative
+*	The Quality of an item is never more than 50; except for “Sulfuras” which can be 80.
+Certain item categories have special behaviours, again which need to be maintained:
+*	"Aged Brie" actually increases in Quality the older it gets
+*	"Sulfuras" never has to be sold or decreases in Quality
+*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value reduces (i.e as it gets closer the Concert); Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
+
+The supermarket has recently signed a supplier of Organic Bananas. 
+This requires an update to the system:
+•	The "Organic Bananas" item degrade in Quality twice as fast as normal items
+
+Changes can be made to the UpdateQuality method and add any new code as long as everything still works correctly.  
+However you cannot alter the Item class as it belongs to a mythical third-party who won’t let us make modifications to the class they provide.
 	
 	
 ## Instructions
@@ -37,5 +51,5 @@ We're not imposing a maximum or minimum time limit on this challenge but previou
 1. Clone this repository
 2. Create your own GitHub/BitBucket repository and commit the base project to it
 3. At regular intervals commit and push your changes so we can see logical progress & steps you took through the problem
-4. Add a text file (ideally in Markdown format) to the root of the repository detailing the changes you made and a explanations for the steps you took
+4. Add a text file (ideally in Markdown format) to the root of the repository detailing the changes you made and explanations for the steps you took
 5. Notify us that you have completed the exercise
