@@ -14,7 +14,7 @@ The idea by performing this exercise you will be able to demonstrate several asp
 
 ## Problem Statement
 ***
-In this made-up scenario we have a supermarket customer who buy and sell only the finest goods.  Unfortunately their goods are constantly degrading in quality as they approach their sell by date.  They have a java application in place that updates their inventory for price and quality as the items age.  We have been engaged to help them develop it further with a new enhancement.
+In this made-up scenario we have a supermarket customer who buy and sell only the finest goods.  Unfortunately their goods are constantly degrading in quality as they approach their sell by date.  They have a Java application in place that updates their inventory for price and quality as the items age.  We have been engaged to help them develop it further with a new enhancement.
 
 Your task is to implement the new feature *without* breaking the existing business logic specified here. 
 	
@@ -34,15 +34,18 @@ There are some strict business rules, which need to be maintained:
 Certain item categories have special behaviours, again which need to be maintained:
 *	"Aged Brie" actually increases in Quality the older it gets
 *	"Sulfuras" never has to be sold or decreases in Quality
-*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value reduces (i.e as it gets closer the concert). Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
+*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value reduces (i.e as it gets closer to the concert). Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
 
 The supermarket has recently signed a supplier of Organic Bananas. 
 This requires an update to the system:
 *	The "Organic Bananas" item degrade in Quality twice as fast as normal items
 
-Changes can be made to the UpdateQuality method and add any new code as long as everything still works correctly.  
+Changes can be made to the updateQuality method and add any new code as long as everything still works correctly.  
 However you cannot alter the Item class as it belongs to a mythical third-party who won’t let us make modifications to the class they provide.
-	
+
+## Code Operation
+***
+When deployed the updateQuality() method gets called nightly to update all the inventory's SellIn and Quality values.  In this harness it is invoked from the main method.  Feel free to modify this to run as many night cycles you require.
 	
 ## Instructions
 ***
