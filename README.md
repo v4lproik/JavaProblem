@@ -34,7 +34,7 @@ There are some strict business rules, which need to be maintained:
 Certain item categories have special behaviours, again which need to be maintained:
 *	"Aged Brie" actually increases in Quality the older it gets
 *	"Sulfuras" never has to be sold or decreases in Quality
-*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value reduces (i.e as it gets closer the Concert); Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
+*	"Backstage Passes", like aged brie, increases in Quality as it's SellIn value reduces (i.e as it gets closer the concert). Quality increases by 2 when there are 10 days or less and by 3 when there are 5 days or less but Quality drops to 0 after the concert
 
 The supermarket has recently signed a supplier of Organic Bananas. 
 This requires an update to the system:
