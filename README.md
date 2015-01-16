@@ -51,5 +51,5 @@ We're not imposing a maximum or minimum time limit on this challenge but previou
 1. Clone this repository
 2. Create your own GitHub/BitBucket repository and commit the base project to it
 3. At regular intervals commit and push your changes so we can see logical progress & steps you took through the problem
-4. Add a text file (ideally in Markdown format) to the root of the repository detailing the changes you made and explanations for the steps you took
+4. Add a text file (ideally in Markdown format) to the root of the repository detailing the changes you made and explanations for the steps you took.  Feel free to include any assumptions you made during the exercise too.
 5. Notify us that you have completed the exercise
