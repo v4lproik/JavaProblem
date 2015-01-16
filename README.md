@@ -38,7 +38,7 @@ Certain item categories have special behaviours, again which need to be maintain
 
 The supermarket has recently signed a supplier of Organic Bananas. 
 This requires an update to the system:
-•	The "Organic Bananas" item degrade in Quality twice as fast as normal items
+*	The "Organic Bananas" item degrade in Quality twice as fast as normal items
 
 Changes can be made to the UpdateQuality method and add any new code as long as everything still works correctly.  
 However you cannot alter the Item class as it belongs to a mythical third-party who won’t let us make modifications to the class they provide.
