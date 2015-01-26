@@ -1,6 +1,8 @@
 package mvc.controllers;
 
 import mvc.models.Item;
+import mvc.models.ItemAbstract;
+import mvc.models.ItemUpdateFactory;
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 
@@ -31,11 +33,19 @@ public class SuperMarketPlusPlus {
         items.add(new Item("Backstage Passes", 15, 20));
         items.add(new Item("Ginger Cake", 3, 6));
 
-        updateQuality();
+        updateQuality(items);
 }
 
 
-	
+    public static void updateQuality(List<Item> items)
+    {
+        for (Item item : items) {
+            ItemAbstract itemStrategy = ItemUpdateFactory.getItemStrategy(item.getName());
+            itemStrategy.update(item);
+            log.debug("Update done : item name " + item.getName() + ", quality " + item.getQuality() + ", sellIn " + item.getSellIn());
+        }
+    }
+	/*
     public static void updateQuality()
     {
         for (int i = 0; i < items.size(); i++)
@@ -110,6 +120,6 @@ public class SuperMarketPlusPlus {
                 }
             }
         }
-    }
+    }*/
 
 }
