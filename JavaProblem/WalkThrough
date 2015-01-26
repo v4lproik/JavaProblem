@@ -1,0 +1,5 @@
+## WalkThrough
+
+1. Before starting we need to create an instance of logger so it would be easier to debug the program
+2. Change the project's architecture
+3. Analyze and understand update function. Several algorithms for a single function... the Strategy pattern is going to come into play !
