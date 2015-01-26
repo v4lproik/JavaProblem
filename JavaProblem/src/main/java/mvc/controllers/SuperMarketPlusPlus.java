@@ -1,6 +1,8 @@
 package mvc.controllers;
 
 import mvc.models.Item;
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +10,18 @@ import java.util.List;
 
 public class SuperMarketPlusPlus {
 
-	private static List<Item> items = null;
+    static Logger log = Logger.getLogger(SuperMarketPlusPlus.class.getName());
+
+    private static List<Item> items = null;
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
-        System.out.println("Starting Supermarket Plus Plus");
+
+        BasicConfigurator.configure();
+
+        log.debug("Starting Supermarket Plus Plus");
 		
         items = new ArrayList<Item>();
         items.add(new Item("Thermal Vest", 10, 20));

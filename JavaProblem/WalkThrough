@@ -3,3 +3,11 @@
 1. Before starting we need to create an instance of logger so it would be easier to debug the program
 2. Change the project's architecture
 3. Analyze and understand update function. Several algorithms for a single function... the Strategy pattern is going to come into play !
+4. What operations the items are in common ? Changing the quality of the product and the sell in day. Creation of the models and the interface that is going
+to implement the common functions.
+5. I just figured that if I want to implement a new functionality, I am going to have to change all my items... I am switching for an abstract class. Besides, I would now be able to
+change the privacy of the functions...
+6. Implementation of the logic business for all the items
+
+## Improvements
+1. Change the class variables from Item class to private...
