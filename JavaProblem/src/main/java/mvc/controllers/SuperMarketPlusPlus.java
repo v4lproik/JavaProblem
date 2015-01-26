@@ -16,6 +16,8 @@ public class SuperMarketPlusPlus {
 
     private static List<Item> items = null;
 
+    private static final int DAY = 5;
+
 	/**
 	 * @param args
 	 */
@@ -33,7 +35,9 @@ public class SuperMarketPlusPlus {
         items.add(new Item("Backstage Passes", 15, 20));
         items.add(new Item("Ginger Cake", 3, 6));
 
-        updateQuality(items);
+        for(int i = 0; i < DAY; i++){
+            updateQuality(items);
+        }
 }
 
 
