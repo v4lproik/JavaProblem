@@ -19,15 +19,12 @@ public class Sulfuras extends ItemAbstract {
      */
     @Override
     public void update(Item item) {
-        if (item.quality < MAX_QUALITY) {
-            updateQuality(item);
-        }
-        //updateSellIn(item);
+
     }
 
     @Override
     public void updateSellIn(Item item) {
-        item.sellIn -= SELLIN_STEP;
+
     }
 
     @Override

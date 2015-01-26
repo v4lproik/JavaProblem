@@ -28,7 +28,7 @@ public class OrganicBananas extends ItemAbstract {
 
     @Override
     public void updateSellIn(Item item) {
-        item.sellIn -= SELLIN_STEP;
+        item.setSellIn(item.getSellIn() - SELLIN_STEP);
     }
 
     @Override

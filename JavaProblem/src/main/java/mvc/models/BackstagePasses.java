@@ -21,7 +21,7 @@ public class BackstagePasses extends ItemAbstract {
      */
     @Override
     public void update(Item item) {
-        if (item.quality < MAX_QUALITY) {
+        if (item.getQuality() < MAX_QUALITY) {
             updateQuality(item);
         }
         updateSellIn(item);
@@ -29,7 +29,7 @@ public class BackstagePasses extends ItemAbstract {
 
     @Override
     public void updateSellIn(Item item) {
-        item.sellIn -= SELLIN_STEP;
+        item.setSellIn(item.getSellIn() - SELLIN_STEP);
     }
 
     @Override
@@ -37,13 +37,13 @@ public class BackstagePasses extends ItemAbstract {
         //logic from supermarketplusplus
         item.setQuality(item.getQuality() + QUALITY_STEP);
 
-        if (item.sellIn < 11) {
-            if (item.quality < MAX_QUALITY) {
+        if (item.getSellIn() < 11) {
+            if (item.getQuality() < MAX_QUALITY) {
                 item.setQuality(item.getQuality() + QUALITY_STEP);
             }
         }
-        if (item.sellIn < 6) {
-            if (item.quality < MAX_QUALITY) {
+        if (item.getSellIn() < 6) {
+            if (item.getQuality() < MAX_QUALITY) {
                 item.setQuality(item.getQuality() + QUALITY_STEP);
             }
         }
