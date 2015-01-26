@@ -41,6 +41,7 @@ public class SuperMarketPlusPlus {
     {
         for (Item item : items) {
             ItemAbstract itemStrategy = ItemUpdateFactory.getItemStrategy(item.getName());
+            log.debug("Starting Update : item name " + item.getName() + ", quality " + item.getQuality() + ", sellIn " + item.getSellIn());
             itemStrategy.update(item);
             log.debug("Update done : item name " + item.getName() + ", quality " + item.getQuality() + ", sellIn " + item.getSellIn());
         }

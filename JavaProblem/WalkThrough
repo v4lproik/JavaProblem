@@ -7,7 +7,10 @@
 to implement the common functions.
 5. I just figured that if I want to implement a new functionality, I am going to have to change all my items... I am switching for an abstract class. Besides, I would now be able to
 change the privacy of the functions...
-6. Implementation of the logic business for all the items
+6. Implementation of the business logic for all the items
+7. Implementation of the factory to the update of the items that need to be updated
 
 ## Improvements
 1. Change the class variables from Item class to private...
+2. Upgrade the project to java 1.7 to use a switch case (joking...)
+3. Add toString function in the Item class so the debug would be easier
