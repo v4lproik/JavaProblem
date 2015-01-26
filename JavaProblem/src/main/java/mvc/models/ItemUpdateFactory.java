@@ -24,7 +24,7 @@ public class ItemUpdateFactory {
             {
                 itemStrategy = new BackstagePasses();
             }else{
-                if (!SULFURAS.equals(name)){
+                if (SULFURAS.equals(name)){
                     itemStrategy = new Sulfuras();
                 }else{
                     if(ORGANIC_BANANAS.equals(name)){

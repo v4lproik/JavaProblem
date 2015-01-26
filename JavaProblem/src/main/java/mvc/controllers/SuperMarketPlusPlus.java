@@ -34,6 +34,7 @@ public class SuperMarketPlusPlus {
         items.add(new Item("Sulfuras", 0, 80));
         items.add(new Item("Backstage Passes", 15, 20));
         items.add(new Item("Ginger Cake", 3, 6));
+        items.add(new Item("Organic Bananas", 30, 26));
 
         for(int i = 0; i < DAY; i++){
             updateQuality(items);

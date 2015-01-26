@@ -34,7 +34,7 @@ public class OrganicBananas extends ItemAbstract {
     @Override
     public void updateQuality(Item item) {
         //logic from supermarketplusplus
-        if(item.getSellIn() < 0)
+        if(item.getSellIn() > 0)
             item.setQuality(item.getQuality() - QUALITY_STEP);
         else
             item.setQuality(item.getQuality() - QUALITY_STEP * 2);

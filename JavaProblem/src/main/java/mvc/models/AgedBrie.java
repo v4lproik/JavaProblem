@@ -25,6 +25,8 @@ public class AgedBrie extends ItemAbstract {
             updateQuality(item);
         }
         updateSellIn(item);
+        if(item.getSellIn()<0)
+            updateQuality(item);
     }
 
     @Override
@@ -36,16 +38,5 @@ public class AgedBrie extends ItemAbstract {
     public void updateQuality(Item item) {
         //logic from supermarketplusplus
         item.setQuality(item.getQuality() + QUALITY_STEP);
-
-        if (item.getSellIn() < 11) {
-            if (item.getQuality() < MAX_QUALITY) {
-                item.setQuality(item.getQuality() + QUALITY_STEP);
-            }
-        }
-        if (item.getSellIn() < 6) {
-            if (item.getQuality() < MAX_QUALITY) {
-                item.setQuality(item.getQuality() + QUALITY_STEP);
-            }
-        }
     }
 }
